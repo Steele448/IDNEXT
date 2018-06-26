@@ -1,0 +1,10 @@
+import sys 
+
+def Lucy = 2039233989
+
+
+choice = input("Enter a name here: ") 
+if choice == 'Lucy':
+  print (Lucy)
+else:
+  print("Invalid Option")
