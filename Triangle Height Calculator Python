@@ -1,0 +1,15 @@
+import sys
+
+def lowestTriangle(base, area):
+    # Complete this function
+    height = area / base * 2
+    #round height to an interger
+    if int(height) < height:
+        return int(height) + 1
+    return int(height)
+assert lowestTriangle(17, 100) == 12
+
+base, area = input().strip().split(' ')
+base, area = [int(base), int(area)]
+height = lowestTriangle(base, area)
+print(height)
