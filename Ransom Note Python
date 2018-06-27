@@ -1,0 +1,35 @@
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the checkMagazine function below.
+def checkMagazine(magazine, note):
+    if len(note) > len(magazine):
+        return False
+    for word in note:
+        if word in magazine:
+            magazine.remove(word)
+        else: 
+            return False
+    return True
+if __name__ == '__main__':
+    mn = input().split()
+    print(number_words)
+    number_magazine_words = int(number_words[0])
+    print(number_magazine_words)
+    number_note_words = int(number_words[1])
+    print(number_note_words)
+    magazine_words = input().rstrip().split()
+    for i in range(number_magazine_words, len(magazine_words)):
+        magazine_words.pop()
+    print(magazine_words)
+    note_words = input().rstrip().split()
+    for i in range(number_note_words, len(note_words)):
+        note_words.pop()
+    print(note_words)
+    if checkMagazine(magazine_words, note_words):
+        print('Yes')
+    else: 
+        print('No')
