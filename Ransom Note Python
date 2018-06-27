@@ -6,7 +6,7 @@ import sys
 
 # Complete the checkMagazine function below.
 def checkMagazine(magazine, note):
-    if len(note) > len(magazine):
+    if len(note) < len(magazine):
         return False
     for word in note:
         if word in magazine:
@@ -14,6 +14,9 @@ def checkMagazine(magazine, note):
         else: 
             return False
     return True
+    
+    assert checkMagazine(['give', 'one' 'grand', 'today', 'night], ['give', 'one', 'grand'])
+    
 if __name__ == '__main__':
     mn = input().split()
     print(number_words)
@@ -25,6 +28,7 @@ if __name__ == '__main__':
     for i in range(number_magazine_words, len(magazine_words)):
         magazine_words.pop()
     print(magazine_words)
+    magazine_words = magazine_words[0: number_magazine_words]
     note_words = input().rstrip().split()
     for i in range(number_note_words, len(note_words)):
         note_words.pop()
