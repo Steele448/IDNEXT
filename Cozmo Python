@@ -1,0 +1,6 @@
+import cozmo
+def coz_prog(robot: cozmorobot.Robot):
+  robot.drivestraight(5, 5):
+  time.sleep(20)
+  robot.drivestraight(-10. -5)
+cozmo.run_program(coz_prog)
