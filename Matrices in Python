@@ -1,15 +1,12 @@
 import numpy as np
 
 a = [[1,2],[2,3]]
-
 b = [[4,5],[8,9]]
 
 mat = np.mat (a)
-
 bat = np.mat (b)
 
-mat = np.linalg.inv (mat)
-
+mat = np.linalg.inv (mat) #inverse of Matrices
 bat = np.linalg.inv (bat)
 
 print ('Matrices:')
