@@ -1,0 +1,22 @@
+import numpy as np
+
+a = [[1,2],[2,3]]
+
+b = [[4,5],[8,9]]
+
+mat = np.mat (a)
+
+bat = np.mat (b)
+
+mat = np.linalg.inv (mat)
+
+bat = np.linalg.inv (bat)
+
+print ('Matrices:')
+print(a)
+print('Inverse')
+print(mat)
+print ('Matrices:')
+print(b)
+print('Inverse')
+print(bat)
